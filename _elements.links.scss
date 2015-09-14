@@ -1,11 +1,25 @@
+///* #LINKS
+//\*------------------------------------*/
 a {
+    color: $link-color;
+    text-decoration: $link-text-decoration;
+    transition-duration: .28s;
+    transition-timing-function: $animation-curve-default;
+    transition-property: opacity;
+}
+
+a:hover:not(.btn) {
     text-decoration: none;
-    color: $color-link;
-    transition: color 0.2s;
+    opacity: $opacity;
+}
 
-    &:hover,
-    &:focus {
-        color: $color-link-hover;
-    }
+h1, h2, h3, h4, h5, h6 {
+ > a {
+    border-bottom: 1px solid transparent;
+    transition-property: all;
 
+ &:hover {
+    border-bottom-color: currentColor;
+}
+}
 }

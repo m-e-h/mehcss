@@ -2,14 +2,6 @@
     #HELPERS
 \*------------------------------------*/
 
-.clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
 .hidden {
     display: none !important;
     visibility: hidden;
@@ -40,31 +32,13 @@
     visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after,
 .clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
+.clear:after {
     content: "";
     display: table;
 }
 
-.clearfix:after,
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
+.clear:after {
     clear: both;
 }
 
